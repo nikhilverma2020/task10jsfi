@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        // concat method
+        const array1 = [1, 2, 3]; <br>
+        const array2 = [4, 5, 6];<br>
+        const newArray = array1.concat(array2);<br>
+        console.log(newArray); // Output: [1, 2, 3, 4, 5, 6]<br>
+        
+        <br><br>
+        const numbers = [1, 2, 3, 4, 5];<br>
+        numbers.copyWithin(0, 3); // Copies values from index 3 to the beginning of the array<br>
+        console.log(numbers); // Output: [4, 5, 3, 4, 5]<br>
+        <br><br>
+        // map method
+        numbers = [1, 2, 3, 4, 5];<br>
+        const multipliedNumbers = numbers.map(num => num * 2);<br>
+        console.log(multipliedNumbers); // Output: [2, 4, 6, 8, 10]<br><br>
+        
+        // every method<br>
+        numbers = [1, 2, 3, 4, 5];<br>
+        const allEven = numbers.every(num => num % 2 === 0);<br>
+        console.log(allEven); // Output: false<br><br>
+        
+        // some method  <br>
+        numbers = [1, 2, 3, 4, 5];<br>
+        const hasEven = numbers.some(num => num % 2 === 0); <br>
+        console.log(hasEven); // Output: true<br><br>
+        
+        // filter method<br>
+        numbers = [1, 2, 3, 4, 5];<br>
+        const evenNumbers = numbers.filter(num => num % 2 === 0);<br>
+        console.log(evenNumbers); // Output: [2, 4]<br><br>
+        
+        numbers = [1, 2, 3, 4, 5];<br>
+        const foundNumber = numbers.find(num => num > 3);<br>
+        console.log(foundNumber); // Output: 4<br><br>
+
+    </p>
+    <script>
+        // concat method
+const array1 = [1, 2, 3];
+const array2 = [4, 5, 6];
+const newArray = array1.concat(array2);
+console.log(newArray); // Output: [1, 2, 3, 4, 5, 6]
+
+
+const numbers = [1, 2, 3, 4, 5];
+numbers.copyWithin(0, 3); // Copies values from index 3 to the beginning of the array
+console.log(numbers); // Output: [4, 5, 3, 4, 5]
+
+// map method
+numbers = [1, 2, 3, 4, 5];
+const multipliedNumbers = numbers.map(num => num * 2);
+console.log(multipliedNumbers); // Output: [2, 4, 6, 8, 10]
+
+// every method
+numbers = [1, 2, 3, 4, 5];
+const allEven = numbers.every(num => num % 2 === 0);
+console.log(allEven); // Output: false
+
+// some method
+numbers = [1, 2, 3, 4, 5];
+const hasEven = numbers.some(num => num % 2 === 0);
+console.log(hasEven); // Output: true
+
+// filter method
+numbers = [1, 2, 3, 4, 5];
+const evenNumbers = numbers.filter(num => num % 2 === 0);
+console.log(evenNumbers); // Output: [2, 4]
+
+numbers = [1, 2, 3, 4, 5];
+const foundNumber = numbers.find(num => num > 3);
+console.log(foundNumber); // Output: 4
+
+    </script>
+</body>
+</html>
